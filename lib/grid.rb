@@ -21,7 +21,7 @@ class Grid
         is_bottom_left(cell, ind, grid_x)
       elsif ind == (grid_x * grid_y - 1)
         is_bottom_right(cell, ind, grid_x)
-      elsif ind < grid_x 
+      elsif ind < grid_x
         is_top(cell, ind, grid_x)
       elsif ind % grid_x == 0
         is_left(cell, ind, grid_x)

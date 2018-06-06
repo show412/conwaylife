@@ -1,7 +1,7 @@
 require('./lib/grid.rb')
 require('./lib/cell.rb')
 require('curses')
- 
+require('pry')
 def conway
 
 	grid_x = 100
@@ -14,7 +14,7 @@ def conway
 			val.pending = '.'
 		end
 	end
-	Curses.curs_set(0)
+	Curses.curs_set(1)
 
 	100.times do
 		new_grid.output(grid_x)
